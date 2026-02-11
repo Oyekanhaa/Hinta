@@ -13,7 +13,7 @@ from langdetect import detect
 from PURVIMUSIC import app as bot
 
 # ✅ MongoDB Connection
-MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://teamdaxx123:teamdaxx123@cluster0.ysbpgcp.mongodb.net/?retryWrites=true&w=majority")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://kanhax:kanhax@kanha.t5xy7s1.mongodb.net/?retryWrites=true&w=majority&appName=kanha")
 mongo_client = MongoClient(MONGO_URL)
 status_db = mongo_client["ChatbotStatus"]["status"]
 chatai_db = mongo_client["Word"]["WordDb"]
