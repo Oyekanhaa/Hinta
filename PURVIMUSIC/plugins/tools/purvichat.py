@@ -221,7 +221,7 @@ custom_responses = {
     "tumhe kaun pasand hai": "Mujhe? Woh ek ladka hai... jo mujhe ye puch raha hai! 😜",
 
      # 🔥 Girl Chatbot Custom Responses
-    "hello": "Heyy! Mai Hinata hoon~ Aap mujhe yaad kar rahe the? 💕",
+    "hello": "Heyy! Mai Anu hoon~ Aap mujhe yaad kar rahe the? 💕",
     "hii": "Hii, kaise ho aap? Mera din ab accha ho gaya! 😊",
     "hey": "Hey cutie! Aap mujhe yaad aaye? 😘",
     "radhe radhe": "radhe radhe jai shree ram 🚩! Aap kaise ho? 🤗",
