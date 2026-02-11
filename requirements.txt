@@ -29,3 +29,4 @@ youtube-search-python
 wget
 py_yt_search
 SafoneAPI
+python-telegram-bot==13.15
