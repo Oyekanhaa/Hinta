@@ -1,5 +1,5 @@
 from pyrogram.types import InlineKeyboardButton
-
+from pyrogram import enums
 import config
 from PURVIMUSIC import app
 
@@ -8,7 +8,7 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f'<tg-emoji emoji-id="4947626231332865349">🎈</tg-emoji>', url=f"https://t.me/{app.username}?startgroup=true"
+                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
             ),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         
