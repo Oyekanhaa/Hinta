@@ -155,6 +155,7 @@ async def welcome(client, message: Message):
                         message.chat.title,
                         app.mention,
                     ),
+                    parse_mode=ParseMode.DEFAULT,
                     reply_markup=InlineKeyboardMarkup(out),
                 )
                 await add_served_chat(message.chat.id)
