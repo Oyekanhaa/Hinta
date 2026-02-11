@@ -19,8 +19,8 @@ status_db = mongo_client["ChatbotStatus"]["status"]
 chatai_db = mongo_client["Word"]["WordDb"]
 
 # ✅ API Configuration
-API_KEY = "sk-or-v1-your-key-here"
-BASE_URL = "https://openrouter.ai/api/v1"
+API_KEY ="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"
+BASE_URL ="https://console.groq.com/keys"
 # ✅ Helper Function: Check If User Is Admin
 async def is_admin(chat_id: int, user_id: int):
     admins = [member.user.id async for member in bot.get_chat_members(chat_id, filter=enums.ChatMembersFilter.ADMINISTRATORS)]
