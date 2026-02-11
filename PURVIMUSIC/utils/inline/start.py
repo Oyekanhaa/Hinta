@@ -8,10 +8,10 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
+                text=f"<tg-emoji emoji-id=\"{5219943216781995020}\">🔥</tg-emoji> Add me", url=f"https://t.me/{app.username}?startgroup=true"
             ),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
-            api_kwargs={"icon_custom_emoji_id": "5219943216781995020"}
+        
         ],
     ]
     return buttons
