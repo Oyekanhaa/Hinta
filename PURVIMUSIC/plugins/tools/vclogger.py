@@ -7,9 +7,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from pyrogram.raw import functions
-from AloneMusic import app
-from AloneMusic.utils.database import get_assistant
-from AloneMusic.core.mongo import mongodb
+from PURVIMUSIC import app
+from PURVIMUSIC.utils.database import get_assistant
+from PURVIMUSIC.core.mongo import mongodb
 
 LOGGER = getLogger(__name__)
 
@@ -184,9 +184,9 @@ async def handle_user_join(chat_id, user_id, userbot):
         name = user.first_name or "Someone"
         mention = f'<a href="tg://user?id={user_id}"><b>{to_small_caps(name)}</b></a>'
         messages = [
-            f"🎤 {mention} <b>ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴠᴄ – ʟᴇᴛ's ᴍᴀᴋᴇ ɪᴛ ʟɪᴠᴇʟʏ! 🎶</b>",
-            f"✨ {mention} <b>ɪs ɴᴏᴡ ɪɴ ᴛʜᴇ ᴠᴄ – ᴡᴇʟᴄᴏᴍᴇ ᴀʙᴏᴀʀᴅ! 💫</b>",
-            f"🎵 {mention} <b>ʜᴀs ᴊᴏɪɴᴇᴅ – ʟᴇᴛ's ʀᴏᴄᴋ ᴛʜɪs ᴠɪʙᴇ! 🔥</b>",
+            f"🎉 #JoinVideoChat 🎉\n\n"
+                        f"Name: {user.mention}\n"
+                        f"Action: Joined\n\n"
         ]
         msg = random.choice(messages)
         sent_msg = await app.send_message(chat_id, msg)
@@ -200,9 +200,9 @@ async def handle_user_leave(chat_id, user_id, userbot):
         name = user.first_name or "Someone"
         mention = f'<a href="tg://user?id={user_id}"><b>{to_small_caps(name)}</b></a>'
         messages = [
-            f"👋 {mention} <b>ʟᴇғᴛ ᴛʜᴇ ᴠᴄ – ʜᴏᴘᴇ ᴛᴏ sᴇᴇ ʏᴏᴜ ʙᴀᴄᴋ sᴏᴏɴ! 🌟</b>",
-            f"🚪 {mention} <b>sᴛᴇᴘᴘᴇᴅ ᴏᴜᴛ – ᴅᴏɴ'ᴛ ᴛᴀᴋᴇ ᴛᴏᴏ ʟᴏɴɢ, ᴡᴇ'ʟʟ ᴍɪss ʏᴏᴜ! 💖</b>",
-            f"✌️ {mention} <b>sᴀɪᴅ ɢᴏᴏᴅʙʏᴇ – ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴀɴᴅ ᴊᴏɪɴ ᴛʜᴇ ғᴜɴ ᴀɢᴀɪɴ! 🎶</b>",
+            f"😕 #LeftVideoChat 😕\n\n"
+                        f"Name: {user.mention}\n"
+                        f"Action: Left\n\n"
         ]
         msg = random.choice(messages)
         sent_msg = await app.send_message(chat_id, msg)
