@@ -54,3 +54,4 @@ python-telegram-bot==20.7
 cloudscraper
 pycryptodome
 opencv-python
+py_yt
