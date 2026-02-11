@@ -1,5 +1,6 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
+def start_panel(_):
 keyboard = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -24,16 +25,7 @@ import config
 from PURVIMUSIC import app
 
 
-def start_panel(_):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=f'<emoji id="5219943216781995020">⚡️</emoji>', url=f"https://t.me/{app.username}?startgroup=true"
-            ),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
-        ],
-    ]
-    return buttons
+
 
 
 
