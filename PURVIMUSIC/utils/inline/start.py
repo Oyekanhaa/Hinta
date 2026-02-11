@@ -1,22 +1,23 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-def start_panel(_):
-keyboard = InlineKeyboardMarkup(
-    inline_keyboard=[
-        [
-            InlineKeyboardButton(
-                text="Invite 🤙",
-                url=config.SUPPORT_CHAT,
-                api_kwargs={"icon_custom_emoji_id": "5219943216781995020"}
-            ),
+async def start_panel(update, context):
+    keyboard = InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(
+                    text="Invite 🤙",
+                    url=config.SUPPORT_CHAT,
+                    api_kwargs={"icon_custom_emoji_id": "5219943216781995020"}
+                ),
+            ]
         ]
-    ]
-)
+    )
 
-await update.message.reply_text(
-    "Click below!",
-    reply_markup=keyboard
-)
+    await update.message.reply_text(
+        "Click below!",
+        reply_markup=keyboard
+    )
+    
 
 
 from pyrogram.types import InlineKeyboardButton
