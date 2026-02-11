@@ -3,7 +3,7 @@ import time
 
 from py_yt import VideosSearch
 from pyrogram import filters
-from pyrogram.enums import ChatType
+from pyrogram.enums import ChatType, ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
@@ -113,6 +113,7 @@ async def start_gp(client, message: Message, _):
         photo=config.START_IMG_URL,
         has_spoiler=True,
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
+        parse_mode=ParseMode.DEFAULT,
         reply_markup=InlineKeyboardMarkup(out),
     )
     return await add_served_chat(message.chat.id)
