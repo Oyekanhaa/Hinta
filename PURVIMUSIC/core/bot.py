@@ -15,6 +15,7 @@ class PURVI(Client):
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
             in_memory=True,
+            parse_mode=ParseMode.DEFAULT,
             max_concurrent_transmissions=7,
         )
 
