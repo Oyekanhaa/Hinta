@@ -28,3 +28,4 @@ youtube-search
 youtube-search-python
 wget
 py_yt_search
+SafoneAPI
