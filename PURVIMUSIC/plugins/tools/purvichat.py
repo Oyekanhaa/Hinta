@@ -19,9 +19,8 @@ status_db = mongo_client["ChatbotStatus"]["status"]
 chatai_db = mongo_client["Word"]["WordDb"]
 
 # ✅ API Configuration
-API_KEY = "abacf43bf0ef13f467283e5bc03c2e1f29dae4228e8c612d785ad428b32db6ce"
-BASE_URL = "https://api.together.xyz/v1/chat/completions"
-
+API_KEY ="sk-66cb23dafa3745f4a43beefec3f17d8f"
+BASE_URL ="https://api.deepseek.com"
 # ✅ Helper Function: Check If User Is Admin
 async def is_admin(chat_id: int, user_id: int):
     admins = [member.user.id async for member in bot.get_chat_members(chat_id, filter=enums.ChatMembersFilter.ADMINISTRATORS)]
