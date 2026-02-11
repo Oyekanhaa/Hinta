@@ -178,8 +178,8 @@ stream_1 : "<b>❖ ᴍᴜsɪᴄ ʙᴏᴛ ση sᴛʀєᴧϻɪηɢ ⏤͟͞●</b>
 stream_2 : "<b>❖ ᴍᴜsᴜᴄ ʙᴏᴛ ση sᴛʀєᴧϻɪηɢ ⏤͟͞●</b>\n\n<b>❍ sᴛʀєᴧϻ ᴛʏᴘє ➥</b> ʟɪᴠєsᴛʀєᴧϻ [ υʀʟ ]\n<b>❍ ʙʏ ➥</b> {0}"
 
 
-CLOSE_BUTTON  : "⌯ ᴄʟσsє ⌯"
-BACK_BUTTON : "⌯ ʙᴀᴄᴋ ⌯"
+CLOSE_BUTTON  : "ᴄʟᴏsᴇ[✗]"
+BACK_BUTTON : "ʙᴀᴄᴋ[↬]"
 NEXT_PAGE: ">"
 BACK_PAGE: "<"
 
