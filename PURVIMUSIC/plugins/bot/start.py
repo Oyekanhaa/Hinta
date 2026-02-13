@@ -112,8 +112,6 @@ async def start_gp(client, message: Message, _):
         photo=config.START_IMG_URL,
         has_spoiler=True,
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
-        icon_custom_emoji_id="5310169226856644648",
-        parse_mode=ParseMode.DEFAULT,
         reply_markup=InlineKeyboardMarkup(out),
     )
     return await add_served_chat(message.chat.id)
