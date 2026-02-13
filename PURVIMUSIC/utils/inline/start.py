@@ -14,7 +14,7 @@ def start_panel(_):
                 style=ButtonStyle.SUCCESS,
                 icon_custom_emoji_id=5310169226856644648,
             ),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT, style=ButtonStyle.SUCCESS, icon_custom_emoji_id=6339024429250515243),
+            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT, style=ButtonStyle.DANGER, icon_custom_emoji_id=6339024429250515243),
         ],
     ]
     return buttons
