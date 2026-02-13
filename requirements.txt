@@ -15,7 +15,6 @@ pillow
 psutil
 py-tgcalls==0.9.7
 pykeyboard
-kurigram
 python-dotenv
 pyyaml
 requests
@@ -33,3 +32,4 @@ SafoneAPI
 python-telegram-bot==13.15
 python-telegram-bot
 langdetect
+git+https://github.com/KurimuzonAkuma/kurigram.git@dev
