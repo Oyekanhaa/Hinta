@@ -1,6 +1,6 @@
 
-from aiogram.types import InlineKeyboardButton
-from aiogram.enums import ButtonStyle
+from pyrogram.types import InlineKeyboardButton
+from pyrogram.enums import ButtonStyle
 import config
 from PURVIMUSIC import app
 
