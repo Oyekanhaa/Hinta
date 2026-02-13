@@ -11,7 +11,8 @@ def start_panel(_):
             InlineKeyboardButton(
                 text=_['S_B_1'], 
                 url=f"https://t.me/{app.username}?startgroup=true",
-                style=ButtonStyle.SUCCESS
+                style=ButtonStyle.SUCCESS,
+                icon_custom_emoji_id="5310169226856644648",
             ),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         ],
