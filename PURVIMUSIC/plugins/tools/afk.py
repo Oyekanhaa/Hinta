@@ -4,6 +4,7 @@ from pyrogram.types import Message
 from PURVIMUSIC import app
 
 AFK_DB = {}
+afk_status = {}
 
 def get_readable_time(seconds):
     periods = [('day', 86400), ('hour', 3600), ('minute', 60), ('second', 1)]
@@ -20,13 +21,16 @@ async def active_afk(_, message: Message):
     user_id = message.from_user.id
     if user_id in AFK_DB:
         data = AFK_DB.pop(user_id)
+        afk_status[user_id] = False
         time_away = get_readable_time(int(time.time() - data["time"]))
-        await message.reply_text(f"**{message.from_user.first_name}** is back online! Away for {time_away}" + (f"\nReason: {data['reason']}" if data.get('reason') else ""))
+        await message.reply_text(f"**{message.from_user.mention}** is back online! Away for {time_away}" + (f"\nReason: {data['reason']}" if data.get('reason') else ""))
         return
     
+    if afk_status.get(user_id, False): return
     details = {"time": time.time(), "reason": None}
     if len(message.command) > 1:
         details["reason"] = message.text.split(None, 1)[1].strip()[:100]
     
     AFK_DB[user_id] = details
-    await message.reply_text(f"{message.from_user.first_name} is now AFK!" + (f"\nReason: {details['reason']}" if details['reason'] else ""))
+    afk_status[user_id] = True
+    await message.reply_text(f"{message.from_user.mention} is now AFK!" + (f"\nReason: {details['reason']}" if details['reason'] else ""))
