@@ -14,7 +14,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from PURVIMUSIC import app
 from config import OWNER_ID
 
-KANA = (8244881089, 7682307978)
+KANA = [8244881089, 7682307978]
 
 ###########
 
